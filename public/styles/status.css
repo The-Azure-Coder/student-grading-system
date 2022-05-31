@@ -1,0 +1,124 @@
+.status-con {
+    display: flex;
+    margin-bottom: 4rem;
+    box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    -webkit-box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    -moz-box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    width: fit-content;
+    height: 20rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    
+
+}
+
+.status-con .status-image {
+    background-image: url('/images/profile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15rem;
+    height: 20rem;
+    border-radius: .4rem;
+}
+
+
+.status-con .status-form {
+    background-color: white;
+    width: 15rem;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: .4rem;
+
+
+
+}
+
+.status-con .status-form label {
+    display: block;
+    margin-bottom: .8rem;
+
+}
+
+.borrow-con{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+
+
+
+.container .card {
+    box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    -webkit-box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    -moz-box-shadow: 10px 10px 28px -9px rgba(181, 165, 165, 0.52);
+    margin-bottom: 4rem;
+    height: 20rem;
+    width:30rem;
+    margin-right: 2rem;
+}
+
+.container .card .image{
+    width: 20rem ;
+}
+
+.container .card .image img{
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.container .card .content {
+    display: flex;
+    padding: 10px;
+    width: 40rem;
+    
+}
+.container .card .avg-grade{
+ position: relative;
+ right: 25rem;
+}
+
+
+.container .card .content h1 {
+    width: 40rem;
+    font-size: 20px;
+    margin-bottom: .4rem;
+    color: rgb(4, 4, 157);
+}
+
+.container .card .content p {
+    margin-bottom: 1.1rem;
+   
+}
+
+.container .card .content label {
+    font-size: 13px;
+    margin-right: .6rem;
+}
+
+.container .card .content h4 {
+margin-top: .8rem;
+margin-left: 5rem;
+margin-bottom: 1rem;
+   
+}
+
+.container .card .content button {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+    margin-left: 5.5rem;
+}
+
+.content{
+    
+}

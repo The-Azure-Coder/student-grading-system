@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= page_title %>
+  </title>
+  <link rel="stylesheet" href="/styles/student.css">
+</head>
+
+<body>
+
+      <form class="student-form" method="POST" action="/students/update">
+        <h1>Student Edit</h1>
+      
+            <label for="txtFirstName">First Name</label>
+            <input type="text" name="txtFirstName" value="<%= data.first_nm%>">
+       
+     
+            <label for="txtLastName">Last Name</label>
+            <input type="text" name="txtLastName" value="<%= data.last_nm%>">
+          
+      
+            <label for="txtClass">Class</label>
+            <input type="text" name="txtClass" value="<%= data.class%>">
+          
+        
+            <input type="hidden" name="id" value="<%= data.id%>">
+            <input class="btn-block btn-primary" type="submit" value="update" />
+
+      </form>
+   
+</body>
+
+</html>

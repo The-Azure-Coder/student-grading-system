@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= page_title %> </title>
+    <link rel="stylesheet" href="/styles/student.css">
+  </head>
+  <body>
+ 
+        <form class="student-form" method="POST" action="/grades/update">
+          <h1>Student Create</h1>
+
+
+                    
+                 <label for="txtFirstName">student_ID</label>
+                  <input type="text" name="student_id" value="<%= data.student_id%>">
+
+                  <label for="txtFirstName">Subject_ID</label>
+                  <input type="text" name="subject_id" value="<%= data.subject_id%>">
+          
+           
+                    <label for="txtFirstName">Term one Grade</label>
+                    <input type="text" name="term1_grd" value="<%= data.term1_grd%>">
+          
+           
+                    <label for="txtLastName">Term Two Grade</label>
+                    <input type="text" name="term2_grd" value="<%= data.term2_grd%>">
+        
+           
+                    <label for="txtClass">Term Three Grade</label>
+                    <input type="text" name="term3_grd" value="<%= data.term3_grd%>">
+          
+                    <input type="hidden" name="id" value="<%= data.id%>">
+           
+                    <input class="btn-block btn-primary" type="submit" value="Add" />
+          
+        </form>
+      </div>  
+    </div>   
+  </body>
+</html>

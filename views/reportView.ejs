@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="/styles/status.css">
+<body>
+
+    <div class="borrow-con">
+    <div class="status-con">
+        <div class="status-image">
+        </div>
+        <div class="status-form">
+            <% if(report.length){ %>
+            <label for="">Name:
+                <span><%=report[0].first_nm%> <%-report[0].last_nm%></span>
+            </label>
+            <label for="">Student ID:
+                <span><%=report[0].id%></span>
+            </label>
+        <%}else{%>
+            <h2>No profile info</h2>
+        <%}%>
+    </div>
+    </div>
+
+    <div class="container">
+        <% if(report.length){ %>
+        <% report.forEach((rep)=>{ %> 
+       <div class="card"> 
+        <div class="content">
+            <div class="term-grade">
+                <h1>Subject :<%=rep.subject%></h1>
+                <p>Term 1 Grade: <%=rep.term1_grd%></p>
+                <p>Term 2 Grade: <%=rep.term2_grd%></p>
+                <p>Term 3 Grade: <%=rep.term3_grd%></p>
+            </div>
+            <div class="avg-grade">
+                <h1>Averages</h1>
+                <p>Average Term 1 Grade: <%=rep.term1_avg%></p>
+                <p>Average Term 2 Grade: <%=rep.term2_avg%></p>
+                <p>Average Term 3 Grade: <%=rep.term3_avg%></p>
+            </div>
+        </div>
+     </div>
+     <%}) %>  
+    <%}else{ %>
+          NO Grades to show
+
+       <%} %>
+  </div>
+  </div>
+  
+    
+</body>
+</html>
